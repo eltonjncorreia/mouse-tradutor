@@ -1,0 +1,10 @@
+# Pacotes gerados para publicação
+*.zip
+*.crx
+
+# Chave privada gerada pelo "Compactar extensão" do Chrome — NUNCA versionar/compartilhar
+*.pem
+
+# Segredos locais
+.env
+.env.*

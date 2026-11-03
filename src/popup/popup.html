@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="../shared/ui.css" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <strong>Hover Translator</strong>
+    <label class="switch" title="Ativar/desativar captura">
+      <input id="enabled" type="checkbox" />
+      <span></span>
+    </label>
+  </header>
+
+  <p id="no-lang" class="warn" hidden>
+    Nenhum idioma configurado. <a href="#" id="setup">Configurar agora</a>
+  </p>
+  <p id="lang-info" class="muted" hidden>Traduzindo para <strong id="lang-name"></strong> · <span id="total"></span> palavras</p>
+
+  <ul id="recent"></ul>
+  <p id="empty" class="muted" hidden>Passe o mouse sobre uma palavra em qualquer página.</p>
+
+  <footer>
+    <button id="open-options">Ver todas / Configurações</button>
+  </footer>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

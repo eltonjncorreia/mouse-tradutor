@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hover Translator — Configurações</title>
+  <link rel="stylesheet" href="../shared/ui.css" />
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <main class="container">
+    <section id="onboarding" class="card onboarding" hidden>
+      <h1>Bem-vindo ao Hover Translator 👋</h1>
+      <p>Passe o mouse sobre qualquer palavra em uma página: ela será salva e traduzida automaticamente.</p>
+      <p><strong>Para começar, escolha o idioma para o qual as palavras serão traduzidas.</strong></p>
+    </section>
+
+    <section class="card">
+      <h2>Configurações</h2>
+      <form id="settings-form">
+        <label>
+          Traduzir para
+          <select id="targetLang" required>
+            <option value="" disabled selected>Selecione um idioma…</option>
+          </select>
+        </label>
+
+        <label>
+          Tempo sobre a palavra até salvar: <span id="delay-value"></span> ms
+          <input id="hoverDelayMs" type="range" min="300" max="3000" step="100" />
+        </label>
+
+        <label class="check">
+          <input id="enabled" type="checkbox" /> Captura ativada
+        </label>
+
+        <label class="check">
+          <input id="showTooltip" type="checkbox" /> Mostrar tradução na página
+        </label>
+
+        <button type="submit" class="primary">Salvar</button>
+        <span id="saved-msg" class="muted" hidden>✔ Salvo</span>
+      </form>
+    </section>
+
+    <section class="card">
+      <div class="row">
+        <h2>Palavras salvas (<span id="word-count">0</span>)</h2>
+        <div class="actions">
+          <input id="search" type="search" placeholder="Buscar…" />
+          <button id="export">Exportar JSON</button>
+          <button id="clear" class="danger">Apagar tudo</button>
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Palavra</th><th>Tradução</th><th>Vezes</th><th>Contexto</th><th>Última vez</th><th></th></tr>
+        </thead>
+        <tbody id="words"></tbody>
+      </table>
+      <p id="empty" class="muted">Nenhuma palavra salva ainda.</p>
+    </section>
+  </main>
+  <script type="module" src="options.js"></script>
+</body>
+</html>

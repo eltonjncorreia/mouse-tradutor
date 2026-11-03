@@ -1,0 +1,59 @@
+.container {
+  max-width: 960px;
+  margin: 32px auto;
+  padding: 0 16px;
+  display: grid;
+  gap: 16px;
+}
+
+.onboarding {
+  border-left: 4px solid var(--accent);
+}
+
+form {
+  display: grid;
+  gap: 14px;
+  max-width: 420px;
+}
+
+form label {
+  display: grid;
+  gap: 6px;
+}
+
+form label.check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+th { color: var(--muted); font-weight: 500; }
+td.translation { font-weight: 600; }
+td.context { color: var(--muted); max-width: 320px; font-size: 13px; }

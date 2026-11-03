@@ -1,0 +1,61 @@
+.ht-highlight,
+.ht-tooltip {
+  position: absolute;
+  z-index: 2147483647;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.ht-highlight {
+  background: rgba(255, 213, 79, 0.35);
+  border-radius: 3px;
+}
+
+.ht-tooltip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  max-width: 320px;
+  background: #1f2330;
+  color: #f4f5f8;
+  font: 13px/1.3 system-ui, -apple-system, "Segoe UI", sans-serif;
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transform: translateY(-3px);
+}
+
+.ht-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.ht-tooltip .ht-original { color: #aab0c0; }
+.ht-tooltip .ht-arrow { color: #6c7385; }
+.ht-tooltip strong { font-weight: 600; color: #ffd54f; }
+.ht-tooltip .ht-badge {
+  margin-left: 4px;
+  padding: 1px 6px;
+  font-size: 11px;
+  border-radius: 999px;
+  background: #343a4d;
+  color: #cfd4e0;
+}
+
+/* Tooltip de trecho selecionado */
+.ht-tooltip.ht-phrase {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  max-width: min(480px, calc(100vw - 16px));
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.ht-tooltip.ht-phrase strong { font-weight: 500; line-height: 1.45; }
+.ht-tooltip .ht-lang {
+  font-size: 11px;
+  color: #6c7385;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
