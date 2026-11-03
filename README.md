@@ -3,6 +3,24 @@
 Passe o mouse sobre uma palavra em qualquer página: depois de um breve tempo parado sobre ela,
 a palavra é **traduzida** para o idioma escolhido no cadastro e **salva permanentemente**.
 
+## Exemplos
+
+**Passando o mouse sobre uma palavra**: a tradução aparece logo abaixo dela.
+
+![Tooltip com a tradução de "Insights" para "Percepções"](docs/images/tooltip-hover.png)
+
+**Selecionando um trecho**: a frase inteira é traduzida.
+
+![Tooltip com a tradução de "Create a new repository"](docs/images/tooltip-selecao.png)
+
+**Popup**: ativa/desativa a captura e mostra as palavras recentes.
+
+![Popup da extensão com as palavras salvas](docs/images/popup.png)
+
+**Configurações**: idioma de destino, tempo de hover e lista completa das palavras, com busca e exportação em JSON.
+
+![Página de configurações e lista de palavras salvas](docs/images/opcoes.png)
+
 ## Instalação no Chrome
 
 Requisitos: Google Chrome (ou Edge, Brave, Opera — qualquer navegador baseado em Chromium)
@@ -146,3 +164,34 @@ src/
 ├── popup/                             # Ativar/desativar + palavras recentes
 └── shared/                            # Idiomas, tipos de mensagem, CSS comum
 ```
+
+## Licença
+
+[PolyForm Noncommercial 1.0.0](LICENSE): uso gratuito apenas para fins **não comerciais**.
+
+| Uso | Permitido sem custo? |
+|-----|----------------------|
+| Uso pessoal, estudo, hobby, pesquisa | ✅ Sim |
+| Instituições de ensino, ONGs, órgãos públicos | ✅ Sim |
+| Modificar, fazer fork e contribuir | ✅ Sim |
+| Vender o software ou versões modificadas | ❌ Requer licença comercial |
+| Publicar em loja com cobrança, anúncios ou assinatura | ❌ Requer licença comercial |
+| Usar em produto, serviço ou empresa com fins lucrativos | ❌ Requer licença comercial |
+
+### Licença comercial
+
+O uso comercial exige um acordo por escrito com o autor, com pagamento de royalties
+ou outro modelo negociado. Contato: **Elton Correia**, eltonjncorreia@gmail.com.
+
+### Contribuindo
+
+Contribuições são bem-vindas! Antes de enviar, leia o [CLAUDE.md](CLAUDE.md) e rode a
+verificação descrita nele. Ao enviar uma contribuição, você declara que:
+
+1. a contribuição é de sua autoria (ou você tem o direito de enviá-la);
+2. concede a Elton Correia uma licença perpétua, mundial, não exclusiva, gratuita e
+   irrevogável para usar, modificar, sublicenciar e distribuir a contribuição sob
+   quaisquer termos, **incluindo licenças comerciais**;
+3. continua sendo o titular dos direitos autorais da sua contribuição.
+
+Registre o aceite assinando os commits com `git commit -s`.
